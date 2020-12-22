@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StellareComponent } from './stellare/stellare.component';
 import { SearchStellareComponent } from './search-stellare/search-stellare.component';
+import{HttpClientModule}from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SearchStellareComponent } from './search-stellare/search-stellare.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
