@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { StellareService } from '../stellare.service';
 
 @Component({
   selector: 'app-stellare',
@@ -6,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stellare.component.css']
 })
 export class StellareComponent implements OnInit {
+obs:Observable<Object>;
+stellareServiceObs:Observable<Object>;
+stelle:any;
+  constructor(
 
-  constructor() { }
+
+
+
+  ) { }
 
   ngOnInit(): void {
   }

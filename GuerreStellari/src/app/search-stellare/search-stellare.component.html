@@ -4,4 +4,8 @@
   <button (click)="submit(newquery)">Search</button>
 
 </p>
-<div *ngFor='let stelle of result.product'></div>
+<div *ngFor='let stelle of results.results'>
+  <img src="https://pictures.abebooks.com/BMP27101943/22632945278.jpg" alt="immagine">
+  <p><a [routerLink]="['/item',stellare.id]">{{stellare.name}}</a></p>
+</div>
+

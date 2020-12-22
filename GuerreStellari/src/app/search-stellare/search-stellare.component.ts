@@ -9,7 +9,7 @@ import{StellareService}from '../stellare.service';
 export class SearchStellareComponent  {
 query: string;
 obs:Observable<Object>
-result:any;
+results:any;
 
   constructor(public stellare:StellareService) { }
 
@@ -19,6 +19,6 @@ result:any;
     }
     this.query=query.value;
     this.obs=this.stellare.searchStellare(this.query);
-    this.obs.subscribe((data) => {this.result= data ; console.log(this.result)});
+    this.obs.subscribe((data) => {this.results= data ; console.log(this.results)});
   }
 }
